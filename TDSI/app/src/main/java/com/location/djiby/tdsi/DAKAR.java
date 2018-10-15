@@ -1,6 +1,7 @@
 package com.location.djiby.tdsi;
 
 import android.content.Intent;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 public class DAKAR extends AppCompatActivity {
 ImageView t;
+ViewPager viewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,9 @@ ImageView t;
               final  Intent intent = new Intent(DAKAR.this,listActivity.class);
 
                 startActivity(intent);
+
             }
         });
+
     }
 }

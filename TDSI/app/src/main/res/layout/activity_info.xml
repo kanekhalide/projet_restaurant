@@ -1,56 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpaper"
         android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:id="@+id/imgid"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/resto1"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnext"
-        android:text="suivant"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/name"
-        android:layout_marginStart="13dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_height="353dp"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="29dp"
-        android:layout_toRightOf="@+id/imgid"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold"
-        android:text="restaurant1"
+        android:layout_alignParentTop="true"
 
-        />
+        android:layout_marginTop="39dp"
+        android:scaleType="fitCenter" />
 
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="57dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imgid"
-        android:layout_alignStart="@+id/name"
-        android:text="price"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000000"
-        android:textStyle="bold" />
-    <TextView
+    <Button
+        android:id="@+id/btnext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nom : "
-        android:textSize="20dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cerclebackgroundgreen"
+        android:text="suivant"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:visibility="visible"
+        tools:textColorLink="@android:color/holo_blue_bright" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nom"
+        android:layout_marginStart="126dp"
+        android:text="restaurant1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,6 +47,47 @@
         android:textColor="@color/colorPrimary"
         android:textSize="20dp"
         android:id="@+id/nom"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="92dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/price"
+        android:layout_marginEnd="73dp"
+        app:srcCompat="@drawable/im" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/price"
+        app:srcCompat="@drawable/apelle" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="66dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/price"
+        android:layout_toStartOf="@+id/imageView10"
+        app:srcCompat="@drawable/web" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="108dp"
+        android:layout_height="43dp"
+        android:layout_alignTop="@+id/price"
+        android:layout_toStartOf="@+id/imageView12"
+        app:srcCompat="@drawable/comm" />
 
 
 </RelativeLayout>

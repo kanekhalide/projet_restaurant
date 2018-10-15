@@ -8,13 +8,16 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class customimage extends BaseAdapter {
+public class
+customimage extends BaseAdapter {
 
     Context c;
-    String []name={"restaurant1","restaurant2","restaurant3","restaurant4","restaurant5"};
-    String []price={"ouvert","ferme","ouvert","ferme","ouvert"};
+    String []name={"Brioche Dorée","Restaurant Farid","Restaurant G2F","La Fourchette","Restaurant la signare","Restaurant Le Lagon 1","Patisseries les Ambassades Point E"
+    ,"La pampa","YUM-YUM Ouakam"};
+    String []price={"ouvert","Libanaise","ouvert","ferme","ouvert","ouvert","ferme","Restaurant","Pizza"};
     int []images= {
-        R.drawable.images1,R.drawable.images2,R.drawable.images3,R.drawable.images4,R.drawable.images5
+        R.drawable.briochedoree,R.drawable.faride,R.drawable.g2f,R.drawable.fourchette,R.drawable.signature
+            ,R.drawable.lagon,R.drawable.ambassadeur,R.drawable.pampa,R.drawable.yum
     };
     @Override
     public int getCount() {

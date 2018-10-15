@@ -1,37 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:id="@+id/name"
-         android:layout_alignParentTop="true"
-         android:layout_marginLeft="28dp"
-         android:layout_toRightOf="@+id/imgid"
-         android:textAppearance="?android:attr/textAppearanceMedium"
-         android:text="restaurant1"
 
-         />
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="100dp"
-        android:id="@+id/imgid"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="26dp"
-        android:padding="10dp"
-        android:src="@drawable/resto1"
-        />
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/price"
-        android:layout_alignBottom="@+id/imgid"
-        android:layout_alignLeft="@+id/name"
-        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="43dp"
+
+        android:layout_marginTop="19dp"
+        android:text="restaurant1"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="10000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgid"
+        android:layout_width="138dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/resto1" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:text="Dakar,Pikne"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#000000"
-        android:textStyle="bold"/>
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/imgid"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/name"
+        app:srcCompat="@drawable/imag" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/name"
+        app:srcCompat="?android:attr/actionModeShareDrawable" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView8"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_alignBottom="@+id/imgid"
+        android:layout_toEndOf="@+id/imageView9"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView7"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 </RelativeLayout>
